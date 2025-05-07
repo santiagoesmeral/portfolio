@@ -1,0 +1,7 @@
+/* GeistMono Font Family */
+@font-face {
+  font-family: "GeistMono";
+  src: url("assets/fonts/GeistMono[wght].woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}
