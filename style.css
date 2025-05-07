@@ -119,14 +119,16 @@ h2 {
     max-width: 70vw;
 }
 
-h3,
 p {
-    font-size: 1.5rem;
     max-width: min(75ch, 70vw);
+    font-size: 1rem;
     font-weight: 600;
 }
 
 h3 {
+    font-size: 1.5rem;
+    max-width: min(75ch, 70vw);
+    font-weight: 700;
     margin-bottom: 1rem;
 }
 
