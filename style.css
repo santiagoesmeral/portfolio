@@ -104,16 +104,20 @@ body {
     pointer-events: none;
 }
 
-
 h1 {
-    font-size: clamp(2.2rem, 10vw, 8rem);
-    font-weight: 800;
+    font-size: clamp(2.2rem, 14vw, 8rem);
+    font-weight: 900;
+}
+
+h2, h3, p, .email-link {
+    margin-left: 2rem;
 }
 
 h2 {
     font-size: clamp(1.6rem, 8vw, 2.5rem);
-    font-weight: 700;
-    margin: 0.5rem 0 1rem 0;
+    font-weight: 800;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 
     max-width: 65vw;
 }
@@ -121,19 +125,38 @@ h2 {
 h3 {
     font-size: 1.4rem;
     max-width: min(75ch, 65vw);
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 1rem;
 }
 
 p {
     max-width: min(75ch, 65vw);
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 p.small {
-    font-size: 1rem;
+    font-size: .8rem;
+    margin-top: .5rem;
+}
+
+.email-link {
+    display: flex;
+    gap: 0.5rem;
+    color: white;
     margin-top: 1rem;
+    width: max-content;
+    transition: 0.1s ease;
+    font-size: clamp(0.5rem, 4vw, 1rem);
+    align-items: center;
+}
+
+.email-link:hover,
+.email-link:focus-visible {
+    background-color: white;
+    color: black;
+    outline: 1px solid white;
+    outline-offset: 2px;
 }
 
 footer {
@@ -147,25 +170,6 @@ footer {
     color: white;
     padding: 1rem 2rem;
     align-items: center;
-}
-
-.email-link {
-    display: flex;
-    gap: 0.5rem;
-    color: white;
-    margin-top: 1rem;
-    width: max-content;
-    transition: 0.1s ease;
-    font-size: clamp(.5rem, 4vw, 1rem);
-    align-items: center;
-}
-
-.email-link:hover,
-.email-link:focus-visible {
-    background-color: white;
-    color: black;
-    outline: 1px solid white;
-    outline-offset: 2px;
 }
 
 .buttonlike-link {
@@ -196,7 +200,6 @@ footer {
     height: 2rem;
 }
 
-
 @media (max-width: 767px) {
     footer {
         bottom: unset;
@@ -218,6 +221,10 @@ footer {
 
     body {
         padding-bottom: 2rem;
+    }
+
+    h2, h3, p, .email-link {
+        margin-left: unset;
     }
 }
 
