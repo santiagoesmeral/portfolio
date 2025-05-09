@@ -244,7 +244,8 @@ footer {
         padding-right: calc(
             var(--butonlike-link-size) +
                 var(--buttonlike-link-hover-focus-outline-offset) +
-                var(--buttonlike-link-hover-focus-outline-width)
+                var(--buttonlike-link-hover-focus-outline-width) + 2rem
+                /* No, I've no idea where the 2rem in the padding-right would come from, but it seems to be needed. */
         );
     }
 
