@@ -220,6 +220,14 @@ footer {
     height: calc(var(--butonlike-link-size) - 1rem);
 }
 
+.buttonlike-link.disabled {
+    color: var(--color-secondary-text);
+    transform: none;
+    outline: unset;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
 @media (max-width: 767px) {
     * {
         --smallscreen-right-padding: 2rem;
